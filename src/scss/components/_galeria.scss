@@ -1,0 +1,31 @@
+.galeriaPropiedad{
+    @include flex(center, center);
+    position:relative;
+    border: 1px solid $gris;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.galeriaPropiedad__imagen{
+    height: auto;
+    width: 100%;
+}
+
+.galeriaPropiedad__left, .galeriaPropiedad__right{
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    background-color: $grisOscuro;
+    cursor: pointer;
+    color: $blanco;
+    border: 0;
+}
+
+.galeriaPropiedad__left{
+    left: 0;
+}
+
+.galeriaPropiedad__right{
+    right: 0;
+}

@@ -1,0 +1,86 @@
+@use 'base/variables' as v;
+//Media Queries
+@mixin mobile{
+    @media (min-width: v.$mobile){
+        @content;
+    }
+}
+@mixin mobileLadeado{
+    @media (min-width: v.$mobileLadeado){
+        @content;
+    }
+}
+@mixin tablet{
+    @media (min-width: v.$tablet){
+        @content;
+    }
+}
+@mixin pc{
+    @media (min-width: v.$pc){
+        @content;
+    }
+}
+@mixin pcXL{
+    @media (min-width: v.$pcXL){
+        @content;
+    }
+}
+
+//Fuente Responsive
+@mixin fuentePorcentaje{
+    @media (min-width: 450px){
+        @content;
+    }
+}
+
+//Layout
+
+@mixin grid($columnas:1, $gap:0){
+    display: grid;
+    grid-template-columns: repeat($columnas,1fr);
+    gap: $gap;
+}
+
+@mixin flex($justify:start,$alineacion:start,$direccion: row){
+    display: flex;
+    justify-content: $justify;
+    align-items: $alineacion;
+    flex-direction: $direccion;
+}
+
+@mixin paddingSupEInf{
+    padding: 3em 0;
+};
+
+//Boton
+@mixin boton($color: transparent, $font-color: $negro){
+    @include flex(center,center,row);
+    background-color: $color;
+    color: $font-color;
+    padding: .5em 1em;
+    display: inline-block;
+    text-align: center;
+    border: 0;
+    &:hover{
+        background-color: darken($color,5);
+        cursor: pointer;
+    }
+}
+
+//Boton
+@mixin aviso($color: transparent, $font-color: $negro){
+    @include flex(center,center,row);
+    background-color: $color;
+    color: $font-color;
+    padding: .5em 1em;
+    display: inline-block;
+    text-align: center;
+    border: 0;
+}
+
+//Background image
+@mixin bgimage{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $blanco;
+}

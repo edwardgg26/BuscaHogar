@@ -1,0 +1,44 @@
+.nuestroblogsec{
+    @include paddingSupEInf;
+    
+    h3{
+        text-align: center;
+    }
+}
+
+.entradasBlog{
+    margin-bottom: 2em;
+    @include grid(1,1em);
+    @include tablet{
+        @include grid(1,2em);
+    }
+}
+
+.entrada{
+    border: .1rem solid $gris;
+
+    @include grid(1,1em);
+    @include tablet{
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    .boton-secundario{
+        display: block;
+        margin-bottom: .5em;
+    }
+}
+
+.entrada-contenido{
+    margin: 0 1em;
+
+    @include tablet{
+        margin-left: 0;
+    }
+
+    .entrada-contenido__titulo{
+        font-weight: bold;
+    }
+}

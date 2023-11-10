@@ -1,0 +1,30 @@
+/*Base*/
+
+@import 'base/normalize';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/globales';
+@import 'base/utilidades';
+
+/*Layout*/
+
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/navegacion';
+@import 'layout/nosotros';
+@import 'layout/propiedad';
+@import 'layout/propiedades';
+@import 'layout/contactsec';
+@import 'layout/nuestroblogsec';
+@import 'layout/contacto';
+@import 'layout/entradablog';
+@import 'layout/admin';
+
+/*Componentes*/
+
+@import 'components/botones';
+@import 'components/avisos';
+@import 'components/tabla';
+@import 'components/formulario';
+@import 'components/galeria';
+@import 'components/tarjeta_propiedad';

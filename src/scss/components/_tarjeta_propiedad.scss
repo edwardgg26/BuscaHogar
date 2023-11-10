@@ -1,0 +1,50 @@
+.tarjeta-depto{
+    border: .1rem solid $gris;
+    // overflow: hidden;
+    height: min-content;
+
+    p{
+        margin: .5em 0 ;
+    }
+
+    .tarjeta-depto__imagen{
+        height: 40%;
+        width: 120%;
+        margin: 0 auto;
+    }
+
+    .tarjeta-depto__titulo{
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .tarjeta-depto__precio,.tarjeta-depto__ciudad{
+        margin-left: 1em;
+    }
+
+    .tarjeta-depto__area{
+        margin: 0 1em 0;
+    }
+
+    .habitaciones{
+        margin: 0 2em;
+    }
+
+    .habitaciones{
+        @include flex(space-between, center, row);
+
+        div{
+            @include flex(space-between,center,row);
+
+            .icon-tabler{
+                max-width: 5rem;
+                min-width: 2rem;
+            }
+        }
+    }
+
+    .boton-secundario{
+        margin: 0 .5em .5em;
+        display: block;
+    }
+}

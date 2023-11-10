@@ -1,0 +1,79 @@
+html{
+    font-size:62.5% ;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+    font-family: $fuentePrincipal;
+    background-color: $colorPrincipal;
+}
+
+
+//Estandarizar fuentes
+
+p,a,li,button,.ionicicono,th,td,label,input,select,textarea{
+    //color: $blanco;
+    font-size: 1.6rem;
+    @include fuentePorcentaje{
+        font-size: min(3.5vw, 2.2rem);
+    }
+}
+
+input,select,textarea{
+    padding: .25em 1em;
+    background-color: transparent;
+    border: .1rem solid lighten($gris,10);
+    width: 100%;
+}
+
+h1,h2,h3{
+    margin-top: 0;
+    //color: $blanco;
+}
+h1{
+    font-size: 2.8rem;
+    @include tablet{
+        font-size: 4rem;
+    }
+}
+h2{
+    font-size: 2.4rem;
+    @include fuentePorcentaje{
+        font-size: min(5.33vw,3.8rem);
+    }
+}
+h3{
+    font-size: 1.9rem;
+    @include fuentePorcentaje{
+        font-size: min(4.22vw,3.2rem);
+    }
+}
+a{
+    text-decoration: none;
+}
+
+//Estandarizar imagenes
+
+img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+//Estandarizar listas
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

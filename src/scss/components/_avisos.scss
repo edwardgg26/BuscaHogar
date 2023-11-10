@@ -1,0 +1,7 @@
+.aviso-error{
+    @include aviso($colorError,$blanco);
+}
+
+.aviso-mensaje{
+    @include aviso($colorMensaje,$blanco);
+}

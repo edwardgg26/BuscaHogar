@@ -1,0 +1,33 @@
+.no-webp .inicio{
+    background: url(../img/header.jpg);
+}
+
+.webp .inicio{
+    background: url(../img/header.webp);
+}
+
+.header{
+    @include bgimage;
+    background-color: $colorSecundario;
+
+    //Header Pagina de inicio
+    &.inicio{
+        background-position: center center;
+        background-color: $blanco;
+        min-height: min(50vh,70rem);
+
+        .contenido-header{
+
+            @include flex(space-between,$alineacion:0,$direccion: column);
+            min-height: min(50vh,70rem);
+            .heading-header{
+                text-align: center;
+                color: $blanco;
+        
+                @include tablet{
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+.barra{
+    @include flex(center, center,column);
+    .navegacion{
+        visibility: hidden;
+        position: absolute;
+        z-index: -10;
+    }
+
+    .desplegarNavegacion{
+        visibility: visible;
+        position: static;
+        z-index: 1;
+    }
+
+    @include tablet{
+        @include flex(space-between, center, row);
+
+        .icon-tabler-menu-2{
+            display: none;
+        }
+
+        .navegacion{
+            visibility: visible;
+            position: static;
+            z-index: 1;
+        }
+    }
+
+    padding: 1em 0;
+    .logo{
+        font-size: 4rem;
+        color: $blanco;
+    }
+
+    .logo--bold{
+        font-weight: bold;
+    }
+}
+
+.barra--footer{
+    .barra{
+        .navegacion{
+            visibility: visible;
+            position: static;
+            z-index: 1;
+        }
+    }
+    @include flex(center, 0, column);
+
+    p{
+        text-align: center;
+    }
+}
+
+.navegacion{
+    @include flex(center,center,column);
+    @include tablet{
+        @include flex(center,center,row);
+
+        .ionicicono{
+            order: 1;
+        }
+    }
+
+    a,.ionicicono{
+        color: $blanco;
+        text-align: center;
+        margin-left: 0;
+        display: block;
+        cursor: pointer;
+        @include tablet{
+            display: inline-block;
+            margin-left: .7em;
+        }
+
+        @include pc{
+            margin-left: 1em;
+        }
+    }
+}

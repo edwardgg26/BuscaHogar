@@ -1,0 +1,11 @@
+.boton-primario{
+    @include boton($colorSecundario, $blanco);
+}
+
+.boton-secundario{
+    @include boton($colorTerciario, $blanco);
+}
+
+.boton-eliminar{
+    @include boton($colorError, $blanco);
+}
