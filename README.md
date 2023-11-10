@@ -1,2 +1,2 @@
 # BuscaHogar
-Sistema de bienes raices
+Un sistema de bienes raíces donde apliqué un MVC, este proyecto es de los proyectos mas completos que he hecho, ya que permite a los usuarios ver los bienes raíces que un vendedor publica en la pagina, donde cada uno cuenta con su propia información e imágenes, también cuenta con un sistema de autenticación para que solo el administrador pueda administrar los bienes raíces del sitio, y por ultimo cuenta con un servidor de correos configurado con PHPmailer que permite a el usuario enviar un correo al vendedor desde la misma aplicación. Para realizar la aplicación usé SASS, HTML, PHP, MySQL y Composer.
